@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPS Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main__content">
+      <div class="calculator__div">
+        <div class="detractors__div">
+          <div class="detractors__title">
+            <h4>DETRACTORS</h4>
+          </div>
+          <div class="detractors__inputs">
+            <label for="score-0"
+              ><div class="detractors__label" id="">
+                <h4>0</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-0"
+                name="score-0"
+                data-index="0"
+                data-testid="score-0" /></label
+            ><label for="score-1"
+              ><div class="detractors__label" id="">
+                <h4>1</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-1"
+                name="score-1"
+                data-index="1"
+                data-testid="score-1" /></label
+            ><label for="score-2"
+              ><div class="detractors__label" id="">
+                <h4>2</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-2"
+                name="score-2"
+                data-index="2"
+                data-testid="score-2" /></label
+            ><label for="score-3"
+              ><div class="detractors__label" id="">
+                <h4>3</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-3"
+                name="score-3"
+                data-index="3"
+                data-testid="score-3" /></label
+            ><label for="score-4"
+              ><div class="detractors__label" id="">
+                <h4>4</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-4"
+                name="score-4"
+                data-index="4"
+                data-testid="score-4" /></label
+            ><label for="score-5"
+              ><div class="detractors__label" id="">
+                <h4>5</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-5"
+                name="score-5"
+                data-index="5"
+                data-testid="score-5" /></label
+            ><label for="score-6"
+              ><div class="detractors__label" id="">
+                <h4>6</h4>
+              </div>
+              <input
+                type="number"
+                class="detractors__input"
+                id="score-6"
+                name="score-6"
+                data-index="6"
+                data-testid="score-6"
+            /></label>
+          </div>
+        </div>
+        <div class="passives__div">
+          <div class="passives__title" id="">
+            <h4>PASSIVES</h4>
+          </div>
+          <div class="passives__inputs">
+            <label for="score-7"
+              ><div class="passives__label" id="">
+                <h4>7</h4>
+              </div>
+              <input
+                type="number"
+                class="passives__input"
+                id="score-7"
+                name="score-7"
+                data-index="7"
+                data-testid="score-7" /></label
+            ><label for="score-8"
+              ><div class="passives__label" id="">
+                <h4>8</h4>
+              </div>
+              <input
+                type="number"
+                class="passives__input"
+                id="score-8"
+                name="score-8"
+                data-index="8"
+                data-testid="score-8"
+            /></label>
+          </div>
+        </div>
+        <div class="promoters__div">
+          <div class="promoters__title" id="">
+            <h4>PROMOTERS</h4>
+          </div>
+          <div class="promoters__inputs">
+            <label for="score-9"
+              ><div class="promoters__label" id="">
+                <h4>9</h4>
+              </div>
+              <input
+                type="number"
+                class="promoters__input"
+                id="score-9"
+                name="score-9"
+                data-index="9"
+                data-testid="score-9" /></label
+            ><label for="score-10"
+              ><div class="promoters__label" id="">
+                <h4>10</h4>
+              </div>
+              <input
+                type="number"
+                class="promoters__input"
+                id="score-10"
+                name="score-10"
+                data-index="10"
+                data-testid="score-10"
+            /></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- NPS Result  -->
+      <div class="result__box">
+        <div class="result__title" id="">
+          <h3>Your score:</h3>
+        </div>
+        <div class="result__chart">
+          <svg class="chart__svg">
+            <defs>
+              <linearGradient
+                id="gradient-left-bottom"
+                x1="0%"
+                x2="0%"
+                y1="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: rgb(255, 139, 79); stop-opacity: 1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgb(219, 77, 92); stop-opacity: 1"
+                ></stop>
+              </linearGradient>
+              <linearGradient
+                id="gradient-left-top"
+                x1="0%"
+                x2="0%"
+                y1="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: rgb(249, 190, 0); stop-opacity: 1"
+                ></stop>
+                <stop
+                  offset="80%"
+                  style="stop-color: rgb(255, 139, 79); stop-opacity: 1"
+                ></stop>
+              </linearGradient>
+              <linearGradient
+                id="gradient-right-top"
+                x1="0%"
+                x2="0%"
+                y1="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="50%"
+                  style="stop-color: rgb(249, 190, 0); stop-opacity: 1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgb(0, 191, 111); stop-opacity: 1"
+                ></stop>
+              </linearGradient>
+              <linearGradient
+                id="gradient-right-bottom"
+                x1="0%"
+                x2="0%"
+                y1="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="90%"
+                  style="stop-color: rgb(0, 191, 111); stop-opacity: 1"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgb(107, 200, 205); stop-opacity: 1"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <g class="result__g">
+              <text class="chart__svg" x="10" y="250">-100</text>
+              <path
+                d="M47.30615308530781 110.57952555001695 A110 110 0 0 0 74.98018039312518 230.44890717810875"
+                fill="none"
+                stroke="#05467E"
+                stroke-width="20"
+              ></path>
+              <text class="chart__svg" x="0" y="105">-50</text>
+              <path
+                d="M148.08023529189882 40.016753532796955 A110 110 0 0 0 48.744466120231564 107.0195758661799"
+                fill="none"
+                stroke="#05467E"
+                stroke-width="20"
+              ></path>
+              <text class="chart__svg" x="145" y="18">0</text>
+              <path
+                d="M251.25553387976845 107.01957586617988 A110 110 0 0 0 151.91976470810118 40.016753532796955"
+                fill="none"
+                stroke="#05467E"
+                stroke-width="20"
+              ></path>
+              <text class="chart__svg" x="270" y="105">50</text>
+              <path
+                d="M227.78174593052023 227.78174593052023 A110 110 0 0 0 252.6938469146922 110.57952555001697"
+                fill="none"
+                stroke="#05467E"
+                stroke-width="20"
+              ></path>
+              <text class="chart__svg" x="250" y="250">100</text>
+            </g>
+            <svg class="inner__svg" height="10" viewBox="0 0 40 40" x="0" y="0">
+              <g transform="rotate(0 30 600) translate(0,0)">
+                <polygon
+                  fill="#fff"
+                  points="50 15, 100 100, 0 100"
+                  transform="translate(-25,120)"
+                ></polygon>
+                <circle cx="25" cy="610" fill="#fff" r="400"></circle>
+              </g>
+            </svg>
+            <g>
+              <text
+                alignment-baseline="central"
+                class="inner__svg__score"
+                data-testid="score-value"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                x="150"
+                y="125"
+              >
+                0
+              </text>
+              <text
+                alignment-baseline="central"
+                class="inner__svg__text"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                x="150"
+                y="175"
+              >
+                NPS
+              </text>
+            </g>
+          </svg>
+        </div>
+        <p class="result__paragraph">
+          Net Promoter Score and NPS are registered trademarks of Bain &
+          Company, Inc., Fred Reichheld and Satmetrix Systems, Inc
+        </p>
+      </div>
+    </div>
+
+    <!-- js  -->
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    color: #1e2124;
+    height: 100vh;
+    font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+}
+
+.main__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+.calculator__div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.dectractors_div, .passives__div, .promoters__div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detractors__title, .passives__title, .promoters__title{
+    margin-bottom: 8px;
+}
+
+.detractors__title > h4, .passives__title > h4, .promoters__title > h4{
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a1a4a7;
+    text-align: center;
+}
+
+.detractors__inputs, .passives__inputs, .promoters__inputs{
+    border-radius: 4px;  
+    margin: 0px 16px;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.detractors__inputs{
+    background-color: #902B3C;
+}
+
+.passives__inputs{
+    background-color: #05467E;
+}
+
+.promoters__inputs{
+    background-color: #00BF6F;
+}
+
+.detractors__label, .passives__label, .promoters__label{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.detractors__label> h4, .passives__label > h4, .promoters__label > h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.detractors__input, .passives__input, .promoters__input{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: rgb(51, 62, 72) !important;
+    border: 1px solid rgb(208, 210, 211);
+    outline: none;
+    font-size: 16px;
+    box-shadow: none;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 1.5;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    appearance: none;
+    font-family: 'National 2';
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.detractors__input::-webkit-inner-spin-button,
+.detractors__input::-webkit-outer-spin-button, .passives__input::-webkit-inner-spin-button, .passives__input::-webkit-outer-spin-button, .promoters__input::-webkit-inner-spin-button, .promoters__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.result__box{
+    text-align: center;
+}
+
+.result__title > h3{
+    color: rgb(30, 33, 36);
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+}
+
+.result__chart{
+    width: auto;
+    margin: 10px auto 30px auto;
+    /* text-align: center; */
+}
+
+.result__chart .chart__svg{
+    height: 250px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.inner__svg{
+    overflow: visible;
+}
+
+.result__paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+
+.inner__svg__score{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.inner__svg__text{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.result__g.negative-score path {
+    stroke: rgb(144, 43, 60);
+}
+
+.result__g.fifty__above__score path{
+    stroke: #00BF6F;
+}
+
+
+  
