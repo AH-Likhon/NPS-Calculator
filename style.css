@@ -28,6 +28,9 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+    margin: 0px auto;
 }
 
 .detractors__div, .passives__div, .promoters__div{
@@ -52,7 +55,7 @@ body{
 
 .detractors__inputs, .passives__inputs, .promoters__inputs{
     border-radius: 4px;  
-    margin: 0px 16px;
+    /* margin: 0px 16px; */
     padding: 24px 16px;
     display: flex;
     justify-content: center;
@@ -136,13 +139,6 @@ body{
     overflow: visible;
 }
 
-.result__paragraph{
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 20px;
-}
-
 .inner__svg__score{
     font-size: 50px;
     font-weight: 300;
@@ -168,9 +164,9 @@ body{
         gap: 40px;
     }
 
-    .calculator__div {
+    /* .calculator__div {
         gap: 20px 0px;
-    }
+    } */
 
     .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
         font-size: 13px;
@@ -196,11 +192,6 @@ body{
         font-size: 15px;
     }
 
-    .result__paragraph{
-        font-size: 13px;
-        line-height: 17px;
-    }
-
     .inner__svg__score{
         font-size: 44px;
     }
@@ -218,9 +209,9 @@ body{
         gap: 30px;
     }
 
-    .calculator__div {
+    /* .calculator__div {
         gap: 20px 0px;
-    }
+    } */
 
     .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
         font-size: 12px;
@@ -242,15 +233,16 @@ body{
         line-height: 32px;
     }
 
-    .result__paragraph{
-        font-size: 12px;
-        line-height: 16px;
-    }
-
     .inner__svg__score{
         font-size: 40px;
     }
     
+}
+
+@media only screen and (max-width: 600px){
+    .detractors__inputs, .passives__inputs, .promoters__inputs{
+        padding: 10px 0px;
+     }
 }
 
 
@@ -260,9 +252,9 @@ body{
         gap: 30px;
     }
 
-    .calculator__div {
+    /* .calculator__div {
         gap: 20px 0px;
-    }
+    } */
 
     .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
         font-size: 11px;
@@ -284,11 +276,6 @@ body{
         line-height: 26px;
     }
 
-    .result__paragraph{
-        font-size: 10px;
-        line-height: 15px;
-    }
-
     .inner__svg__score{
         font-size: 35px;
     }
@@ -298,6 +285,8 @@ body{
     }
     
 }
+
+
 
 
   
