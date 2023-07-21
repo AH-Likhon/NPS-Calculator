@@ -5,9 +5,9 @@
 }
 
 body{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #F7F7F7;
     color: #1e2124;
     height: 100vh;
@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     gap: 60px;
     width: 100%;
+    padding: 60px 0px;
 }
 
 .calculator__div{
@@ -29,7 +30,7 @@ body{
     justify-content: center;
 }
 
-.dectractors_div, .passives__div, .promoters__div{
+.detractors__div, .passives__div, .promoters__div{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,9 +122,8 @@ body{
 }
 
 .result__chart{
-    width: auto;
+    width: 90%;
     margin: 10px auto 30px auto;
-    /* text-align: center; */
 }
 
 .result__chart .chart__svg{
@@ -159,6 +159,144 @@ body{
 
 .result__g.fifty__above__score path{
     stroke: #00BF6F;
+}
+
+
+@media only screen and (max-width: 1024px){
+    
+    .main__content{
+        gap: 40px;
+    }
+
+    .calculator__div {
+        gap: 20px 0px;
+    }
+
+    .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .detractors__input, .passives__input, .promoters__input{
+        width: 35px;
+        height: 35px;
+    }
+
+    .detractors__label> h4, .passives__label > h4, .promoters__label > h4{
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .result__title > h3{
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .result__chart .chart__svg{
+        font-size: 15px;
+    }
+
+    .result__paragraph{
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .inner__svg__score{
+        font-size: 44px;
+    }
+    
+    .inner__svg__text{
+        font-size: 24px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    .main__content{
+        gap: 30px;
+    }
+
+    .calculator__div {
+        gap: 20px 0px;
+    }
+
+    .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .detractors__input, .passives__input, .promoters__input{
+        width: 32px;
+        height: 32px;
+    }
+
+    .detractors__label> h4, .passives__label > h4, .promoters__label > h4{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .result__title > h3{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .result__paragraph{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .inner__svg__score{
+        font-size: 40px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 320px){
+    
+    .main__content{
+        gap: 30px;
+    }
+
+    .calculator__div {
+        gap: 20px 0px;
+    }
+
+    .detractors__title > h4, .passives__title > h4, .promoters__title > h4{
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .detractors__input, .passives__input, .promoters__input{
+        width: 23px;
+        height: 23px;
+    }
+
+    .detractors__label> h4, .passives__label > h4, .promoters__label > h4{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .result__title > h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .result__paragraph{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .inner__svg__score{
+        font-size: 35px;
+    }
+    
+    .inner__svg__text{
+        font-size: 22px;
+    }
+    
 }
 
 
