@@ -10,7 +10,6 @@ body{
     align-items: center; */
     background-color: #F7F7F7;
     color: #1e2124;
-    height: 100vh;
     font-family: 'National 2', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
 }
 
@@ -115,6 +114,7 @@ body{
 
 .result__box{
     text-align: center;
+    width: 100%;
 }
 
 .result__title > h3{
@@ -125,14 +125,18 @@ body{
 }
 
 .result__chart{
-    width: 90%;
+    width: 100%;
     margin: 10px auto 30px auto;
+    position: relative;
 }
 
 .result__chart .chart__svg{
     height: 250px;
     font-size: 16px;
     font-weight: 300;
+    position: relative;
+    /* border: 1px solid red; */
+    left: 3px;
 }
 
 .inner__svg{
@@ -188,9 +192,9 @@ body{
         line-height: 36px;
     }
 
-    .result__chart .chart__svg{
+    /* .result__chart .chart__svg{
         font-size: 15px;
-    }
+    } */
 
     .inner__svg__score{
         font-size: 44px;
@@ -239,10 +243,24 @@ body{
     
 }
 
+
+
 @media only screen and (max-width: 600px){
     .detractors__inputs, .passives__inputs, .promoters__inputs{
         padding: 10px 0px;
      }
+}
+
+@media only screen and (max-width: 480px){
+    .result__chart .chart__svg{
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .result__chart .chart__svg{
+        left: 10px;
+    }
 }
 
 
