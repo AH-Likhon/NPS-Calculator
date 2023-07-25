@@ -143,6 +143,11 @@ body{
     overflow: visible;
 }
 
+/* .inner__svg polygon {
+    fill: #fff; 
+    pointer-events: none; 
+} */
+
 .inner__svg__score{
     font-size: 50px;
     font-weight: 300;
